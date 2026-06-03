@@ -5,7 +5,7 @@ import pandas as pd
 import streamlit as st
 
 from lib.auth import require_auth
-from components.charts import metric_line_chart
+from lib.charts import metric_line_chart
 from lib.db import get_metrics, list_projects, list_runs, metric_names
 
 st.set_page_config(page_title="Compare · ML Tracker", page_icon="📊", layout="wide")
