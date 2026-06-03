@@ -6,8 +6,8 @@ from __future__ import annotations
 
 import streamlit as st
 
-from auth import current_user, logout, require_auth
-from db import ensure_indexes, get_db
+from lib.auth import current_user, logout, require_auth
+from lib.db import ensure_indexes, get_db
 
 st.set_page_config(
     page_title="ML Experiment Tracker",
