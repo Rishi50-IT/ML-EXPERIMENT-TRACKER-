@@ -4,9 +4,9 @@ from __future__ import annotations
 import pandas as pd
 import streamlit as st
 
-from auth import require_auth
-from components.charts import metric_line_chart, params_table
-from db import (
+from lib.auth import require_auth
+from lib.charts import metric_line_chart, params_table
+from lib.db import (
     delete_run,
     get_metrics,
     get_run,
