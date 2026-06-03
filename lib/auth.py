@@ -7,7 +7,7 @@ from typing import Optional
 import bcrypt
 import streamlit as st
 
-from db import get_db
+from lib.db import get_db
 
 
 def _users():
