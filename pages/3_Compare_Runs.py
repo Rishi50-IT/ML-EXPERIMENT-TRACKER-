@@ -4,9 +4,9 @@ from __future__ import annotations
 import pandas as pd
 import streamlit as st
 
-from auth import require_auth
+from lib.auth import require_auth
 from components.charts import metric_line_chart
-from db import get_metrics, list_projects, list_runs, metric_names
+from lib.db import get_metrics, list_projects, list_runs, metric_names
 
 st.set_page_config(page_title="Compare · ML Tracker", page_icon="📊", layout="wide")
 user = require_auth()
