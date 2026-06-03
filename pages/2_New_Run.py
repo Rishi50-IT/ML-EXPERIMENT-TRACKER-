@@ -7,8 +7,8 @@ import json
 import pandas as pd
 import streamlit as st
 
-from auth import require_auth
-from db import create_run, list_projects, log_metric, update_run
+from lib.auth import require_auth
+from lib.db import create_run, list_projects, log_metric, update_run
 
 st.set_page_config(page_title="New Run · ML Tracker", page_icon="➕", layout="wide")
 user = require_auth()
