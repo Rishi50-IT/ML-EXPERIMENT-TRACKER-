@@ -18,7 +18,7 @@ _client: Optional[MongoClient] = None
 def get_db() -> Database:
     global _client
     if _client is None:
-        uri = os.getenv("MONGODB_URI", "mongodb://localhost:27017")
+        uri = os.getenv("MONGODB_URI", "mongodb+srv://Rishi_Munda:Rahul124%40@cluster0.dod06ln.mongodb.net/?appName=Cluster0" )
         _client = MongoClient(uri, serverSelectionTimeoutMS=5000)
     return _client[os.getenv("MONGODB_DB", "ml_experiment_tracker")]
 
