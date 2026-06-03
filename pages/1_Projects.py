@@ -3,8 +3,8 @@ from __future__ import annotations
 
 import streamlit as st
 
-from auth import require_auth
-from db import create_project, delete_project, list_projects, list_runs
+from lib.auth import require_auth
+from lib.db import create_project, delete_project, list_projects, list_runs
 
 st.set_page_config(page_title="Projects · ML Tracker", page_icon="📁", layout="wide")
 user = require_auth()
